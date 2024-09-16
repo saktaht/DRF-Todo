@@ -1,4 +1,4 @@
 django == 4.2.0
 psycopg
 dj-database-url==0.5.0
-djangorestframework==3.12.4
+djangorestframework==3.14.0
