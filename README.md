@@ -16,10 +16,10 @@ python manage.py createsuperuser
 
 トークン発行
 
-curl -X POST http://0.0.0.0:8000/api-auth/login/
+curl -X POST http://0.0.0.0:8000/api-auth/login/ \
 -H "Content-Type: application/json" -d ' { "username": "admin", "password": "fafa86487" }'
 
-curl -X POST http://0.0.0.0:8000/api-auth/logout/
+curl -X POST http://0.0.0.0:8000/api-auth/logout/ \
 -H “Authorization” : Bearer 発行されたトークン
 
 docker compose down --rmi all -v
